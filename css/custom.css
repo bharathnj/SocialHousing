@@ -1,0 +1,101 @@
+	.button-collapse{
+			color: #797776 !important;
+		}
+		.parallax-container {
+		  min-height: 380px;
+		  line-height: 0;
+		  height: auto;
+		  color: rgba(255,255,255,.9);
+		}
+		.parallax-container .section {
+			width: 100%;
+		}
+		.logo{
+			width: 270px;
+			margin: 14px 0px 0px 52px
+        }
+        .container{
+            width: 90% !important;
+        }
+        .modal .modal-content {
+            padding: 10px;
+        }
+        .action{
+            float: right;
+        }
+        .action > .btn{
+            background-color: rgba(0, 0, 0, 0.42);
+        }
+        .modal .modal-content{
+            overflow-x: hidden;
+        }
+        .close {
+            float: right;
+        }
+        .card-content{
+            background-color: #e9e9e9a8;
+        }
+        .card-content{
+            cursor: pointer;
+        }
+
+        .button-collapse {
+            color: #d65c1b;
+        }
+        .btn, .btn-large, .btn-floating{
+            background-color: #d65c1b !important
+        }
+        .btn:hover, .btn-large:hover {
+            background-color: #2bbbad;
+        }
+       .btn:focus, .btn-large:focus, .btn-floating:focus{
+            background-color: #7e7bbf;
+        }
+        .switch label input[type=checkbox]:checked + .lever:after {
+            background-color: #d65c1b;
+        }
+        .switch label input[type=checkbox]:checked + .lever {
+            background-color: #e8a98c;
+        }
+       
+        input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+            border-bottom: 1px solid #524F81;
+            -webkit-box-shadow: 0 1px 0 0 #524f81;
+            box-shadow: 0 1px 0 0 #524f81;
+        }
+        input:not([type]):focus:not([readonly]) + label, input[type=text]:not(.browser-default):focus:not([readonly]) + label, input[type=password]:not(.browser-default):focus:not([readonly]) + label, input[type=email]:not(.browser-default):focus:not([readonly]) + label, input[type=url]:not(.browser-default):focus:not([readonly]) + label, input[type=time]:not(.browser-default):focus:not([readonly]) + label, input[type=date]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label, input[type=tel]:not(.browser-default):focus:not([readonly]) + label, input[type=number]:not(.browser-default):focus:not([readonly]) + label, input[type=search]:not(.browser-default):focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
+            color: #524f81;
+        }
+        [type="checkbox"]:checked + label:before{
+            border-right: 2px solid #524F81 ;
+            border-bottom: 2px solid #524F81 ;
+        }
+
+        .tabs .indicator{
+                background-color: #a99f9f;
+        }
+        .tabs .tab a{
+            color: #777777e8;
+        }
+        .tabs .tab a:hover, .tabs .tab a.active{
+            color: #383838;
+        }
+		.start-button{
+			background-color: #63ac45 !important;
+		}
+		.stop-button{
+			background-color: #dc3f45ed !important;
+		}
+		.edit-button{
+			background-color: #737271ba !important;
+		}
+		.ucheading{
+			text-align: center;
+			font-size: 18px;
+			padding: 4px;
+			background-color: #d0cfcfab;
+		}
+		.chips .chip.selected {
+			background-color: #585553 !important;
+			color: #fff;
+		}
