@@ -59,7 +59,7 @@
         </li>
         <li><a class="waves-effect" href="index.html"><i class="material-icons">ac_unit</i>Home</a></li>
 		        <li><a class="waves-effect" href="details.html"><i class="material-icons">details</i>Details</a></li>
-        <li><a class="waves-effect modal-trigger" href="addpartner.html" target="_blank"><i class="material-icons">person_add</i>Add Partner</a></li>
+        <li><a class="waves-effect modal-trigger" href=""><i class="material-icons">person_add</i>Add Partner</a></li>
         <li><div class="divider"></div></li>
         <li><a class="waves-effect" href="#!"><i class="material-icons">settings</i>Settings</a></li>
 		<li><a class="waves-effect" href="logout.html"><i class="material-icons">close</i>Logout</a></li>
@@ -85,24 +85,9 @@
 	
 	<!-- Partner Details-->
 	<br>
-    <div class="container">
-		<table class="striped responsive-table">
-        <thead>
-          <tr>
-			  <th>Sl No.</th>
-			  <th>Partner Id</th>
-              <th>Trading Partner</th>
-              <th>Description</th>
-			  <th>Service State</th>
-			  <th>Start Service</th>
-			  <th>Stop Service</th>
-			  <th>Edit Service</th>
-          </tr>
-        </thead>
-
-        <tbody id="tbody">
-        </tbody>
-      </table>
+    <button onclick="getlogin();"> Get div</button>
+    <div class="container" id="TestContainer">
+	
     </div>
 	
 	 <!--Edit Service Modal Structure -->
@@ -252,6 +237,13 @@
 			  tag: 'Certificate_name_3',
 			}],
 		  });
+        function getlogin(){
+            $.ajax({
+  url: "login.html"
+}).done(function(data) { // data what is sent back by the php page
+  $('#TestContainer').html(data); // display data
+});
+        }
 	</script>
   </body>
 </html>
