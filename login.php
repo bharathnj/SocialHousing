@@ -38,7 +38,7 @@
 
 
 			$login_tym = date('Y-m-d H:i:s');
-			$LoginEntrySql  = "INSERT INTO LoginHistory(EmailId,LoginTime) VALUES ('$email','$login_tym')";
+			$LoginEntrySql  = "INSERT INTO loginhistory(EmailId,LoginTime) VALUES ('$email','$login_tym')";
 			$res = mysqli_query($db,$LoginEntrySql);	
 
 			$_SESSION['LoginInsertId'] = $db->insert_id;

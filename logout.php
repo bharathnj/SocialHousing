@@ -7,7 +7,7 @@
 		$id = $_SESSION['LoginInsertId'];
 		$logout_tym = date('Y-m-d H:i:s');
 
-		$LogoutEntrySql = "UPDATE LoginHistory set LogoutTime='$logout_tym' where LoginActivityId = $id";
+		$LogoutEntrySql = "UPDATE loginhistory set LogoutTime='$logout_tym' where LoginActivityId = $id";
 		$res = mysqli_query($db,$LogoutEntrySql);	
 
 		Unset( $_SESSION['Login'] );
