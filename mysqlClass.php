@@ -13,7 +13,7 @@
     function inactivate($id)
     {
         global $db;
-        $sql = "UPDATE user_login SET status='0' WHERE email = $id;
+        $sql = "UPDATE user_login SET status='0' WHERE email = $id";
         $r = mysqli_query($db,$sql);
         return $r;
     }

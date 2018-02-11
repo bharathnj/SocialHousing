@@ -29,15 +29,26 @@
 				$AccessLevel = $row['AccessLevel'];
 	    	}
 		}
+
+		$FullName = $FirstName + " " + $LastName;
 	
 		if($email == $demail && $password == $dpassword){
 			$_SESSION['Login'] = $email;
-			
-			$FullName = $FirstName + " " + $LastName;
-
 			$_SESSION['UserCredentials'] = array("FullName"=> $FullName, "AccessLevel"=>$AccessLevel);	
-			
-			echo 'true';			 
+
+
+			$login_tym = date('Y-m-d H:i:s');
+			$LoginEntrySql  = "INSERT INTO LoginHistory(EmailId,LoginTime) VALUES ('$email','$login_tym')";
+			$res = mysqli_query($db,$LoginEntrySql);	
+
+			$_SESSION['LoginInsertId'] = $db->insert_id;
+
+			$res = mysqli_affected_rows($db);
+			if($res == 1){
+				echo 'true';	
+			}else{
+				echo 'error';
+			}
 		}else{
 			
 			echo 'false';

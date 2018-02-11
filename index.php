@@ -1,3 +1,11 @@
+<?php
+    session_start();
+   include('mysqlInterface.php');
+   if(isset($_SESSION['Login']))
+   {
+	    header("Location: home.php");
+   }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +17,7 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link href="css/custom.css" type="text/css" rel="stylesheet" />
+		<link href="css/custom.css" type="text/css" rel="stylesheet" />
 		<style type="text/css">
 				input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
 						border-bottom: 1px solid #797776;
@@ -22,10 +30,18 @@
 				.section {
 				     padding-top: 0rem; 
 				}
+				.grey.lighten-4 {
+				    background-color: #f5f5f500 !important;
+				}
 		</style>
 </head>
 <body>
 	<div class="section"></div>
+
+	<div class="section"></div>
+
+	<div class="section"></div>
+
 	<main>
 		<center>
 			<img class="responsive-img" style="width: 155px;" src="images/logo.jpg" />
@@ -68,6 +84,7 @@
 		<div class="text-12">
 			<div class="empty" style="display:none;"><strong> One or more fields are empty </strong></div>
 			<div class="error" style="color: red; display:none;">Username of password is wrong !! </div>
+			<div class="false" style="color: red; display:none;">Something Went Wrong, Try again !! </div>
 		</div>
 		</div>
 		</center>
@@ -90,6 +107,8 @@
 
                 	$(".empty").css("display","none");
                 	$(".error").css("display","none");
+                	$(".false").css("display","none");
+                	
                 	/* Check for blank fields*/	
                 	if((email=="" || pass=="" || email==null || pass==null))
                 	{
@@ -103,11 +122,14 @@
 							dataType: "text",
 							data: {email:email,pass:pass},
 							success: function(response) {
+
+									console.log(response)
 									if(response =="true"){
 										window.location.href="home.php";
 									}else if(response =="false"){
-										
 	                					$(".error").css("display","inherit");	
+									}else {
+										$(".false").css("display","inherit");
 									}
 							},
 							error: function(response){
