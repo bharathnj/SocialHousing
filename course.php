@@ -30,7 +30,6 @@
         <ul class="right hide-on-med-and-down">
             <li class="active"><a href="home.php">Home</a></li>
 			<li><a href="courses.php">Courses</a></li>
-           <li><a href="about.php">About</a></li>
             <li><a class="waves-effect waves-light btn edit-button" href="logout.php">Logout</a></li>
         </ul>
         </div>
@@ -59,6 +58,7 @@
 
 
 
+    <?php include('footer.php'); ?>
 	  <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>

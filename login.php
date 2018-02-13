@@ -30,7 +30,7 @@
 	    	}
 		}
 
-		$FullName = $FirstName + " " + $LastName;
+//		$FullName = $FirstName + " " + $LastName;
 	
 		if($email == $demail && $password == $dpassword){
 			$_SESSION['Login'] = $email;
