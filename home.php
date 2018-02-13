@@ -17,8 +17,17 @@
     <title>Social Housing</title>
 
     <?php include('header.php'); ?>
+    <style type="text/css">
+        .side-nav .collapsible-header, .side-nav.fixed .collapsible-header {
+    background-color: transparent;
+    border: none;
+    line-height: inherit;
+    height: inherit;
+    padding: 0 16px 0px 32px;
+}
+    </style>
 </head>
-<body>
+<body>  
 	    <!-- Navigation Bar Section-->
    <div class="navbar-fixed">
     <nav class="white" role="navigation">
@@ -53,6 +62,20 @@
         <li><div class="divider"></div></li>
         <li><a class="waves-effect" href="#!"><i class="material-icons">settings</i>Settings</a></li>
 		<li><a class="waves-effect" href="logout.php"><i class="material-icons">close</i>Logout</a></li>
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">First</a></li>
+                <li><a href="#!">Second</a></li>
+                <li><a href="#!">Third</a></li>
+                <li><a href="#!">Fourth</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
     </ul>
 
 
