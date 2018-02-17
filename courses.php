@@ -7,6 +7,8 @@
     header("Location: index.php");
     die();
    }
+
+   $page="courses";
 ?>
 
 <!DOCTYPE html>
@@ -25,45 +27,22 @@
             display: block;
             line-height: 8px;
             margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        .card .card-content{
+            padding: 10px;
+        }
+        .card .card-content .card-title i {
+            line-height: 10px;
         }
     </style>
 </head>
 <body>
-	    <!-- Navigation Bar Section-->
-   <div class="navbar-fixed">
-    <nav class="white" role="navigation">
-        <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">
-            <img class="logo" src="images/hlogov2.png" style="width: 125px; margin-left: 41px; margin-top:0px;" />
-            <a href="#" data-activates="slide-out" style="display: list-item;" class="button-collapse"><i class="material-icons">menu</i></a>
-        </a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="home.php">Home</a></li>
-			<li class="active"><a href="courses.php">Courses</a></li>
-            <li><a class="waves-effect waves-light btn edit-button" href="logout.php">Logout</a></li>
-        </ul>
-        </div>
-    </nav>
-    </div>
+     <?php include("navigationbar.php"); ?>
 
+    <?php include("sidenavbar.php"); ?>    
 
-    <!-- Side Nav -->
-    <ul id="slide-out" class="side-nav">
-        <li>
-            <div class="user-view">
-                <div class="background">
-                    <img src="images/office.jpg">
-                </div><br>
-                <a href="#!name"><span class="white-text name">User Name</span></a>
-                <a href="#!email"><span class="white-text email">User Name@domain.com</span></a>
-            </div>
-        </li>
-        <li><a class="waves-effect" href="home.php"><i class="material-icons">ac_unit</i>Home</a></li>
-		<li><a class="waves-effect" href="courses.php"><i class="material-icons">details</i>Courses</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="waves-effect" href="#!"><i class="material-icons">settings</i>Settings</a></li>
-		<li><a class="waves-effect" href="logout.php"><i class="material-icons">close</i>Logout</a></li>
-    </ul>
     <div class="section"></div>
     <div class="container">
         <!-- Modules section -->
@@ -71,136 +50,10 @@
             <div class="col m2">
                <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/office.jpg">
+                       <a href="courseContainer.php?c=1"><img src="images/office.jpg"> </a>
                     </div>
-                    <div class="card-content">
-                        <span class="card-title grey-text text-darken-4">Module 1</span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                </div> 
-            </div>
-            <div class="col m2">
-               <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/office.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title grey-text text-darken-4">Module 2</span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                </div> 
-            </div>
-            <div class="col m2">
-               <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/office.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title grey-text text-darken-4">Module 3</span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                </div> 
-            </div>
-            <div class="col m2">
-               <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/office.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title grey-text text-darken-4">Module 4</span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                </div> 
-            </div>
-            <div class="col m2">
-               <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/office.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title grey-text text-darken-4">Module 5</span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                </div> 
-            </div>
-            <div class="col m2">
-               <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/office.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title grey-text text-darken-4">Module 6</span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                </div> 
-            </div>
-            <div class="col m2">
-               <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/office.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title grey-text text-darken-4">Module 7</span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                </div> 
-            </div>
-            <div class="col m2">
-               <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/office.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title grey-text text-darken-4">Module 8</span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                </div> 
-            </div>
-            <div class="col m2">
-               <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/office.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title grey-text text-darken-4">Module 9</span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                </div> 
-            </div>
-            <div class="col m2">
-               <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/office.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title grey-text text-darken-4">Module 10</span>
+                    <div class="card-content activator">
+                       <span class="card-title grey-text text-darken-4 activator">Module 1<i class="material-icons right">more_vert</i></span>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -209,6 +62,140 @@
                 </div> 
             </div>
 
+            <div class="col m2">
+               <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                       <a href="modules/module2.php" ><img src="images/office.jpg"> </a>
+                    </div>
+                    <div class="card-content activator">
+                       <span class="card-title grey-text text-darken-4 activator">Module 2<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col m2">
+               <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                       <a href="modules/module3.php" ><img src="images/office.jpg"> </a>
+                    </div>
+                    <div class="card-content activator">
+                       <span class="card-title grey-text text-darken-4 activator">Module 3<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col m2">
+               <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                       <a href="modules/module4.php" ><img src="images/office.jpg"> </a>
+                    </div>
+                    <div class="card-content activator">
+                       <span class="card-title grey-text text-darken-4 activator">Module 4<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col m2">
+               <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                       <a href="modules/module5.php" ><img src="images/office.jpg"> </a>
+                    </div>
+                    <div class="card-content activator">
+                       <span class="card-title grey-text text-darken-4 activator">Module 5<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col m2">
+               <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                       <a href="modules/module6.php" ><img src="images/office.jpg"> </a>
+                    </div>
+                    <div class="card-content activator">
+                       <span class="card-title grey-text text-darken-4 activator">Module 6<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col m2">
+               <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                       <a href="modules/module7.php" ><img src="images/office.jpg"> </a>
+                    </div>
+                    <div class="card-content activator">
+                       <span class="card-title grey-text text-darken-4 activator">Module 7<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col m2">
+               <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                       <a href="modules/module8.php" ><img src="images/office.jpg"> </a>
+                    </div>
+                    <div class="card-content activator">
+                       <span class="card-title grey-text text-darken-4 activator">Module 8<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col m2">
+               <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                       <a href="modules/module9.php" ><img src="images/office.jpg"> </a>
+                    </div>
+                    <div class="card-content activator">
+                       <span class="card-title grey-text text-darken-4 activator">Module 9<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col m2">
+               <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                       <a href="modules/module10.php" ><img src="images/office.jpg"> </a>
+                    </div>
+                    <div class="card-content activator">
+                       <span class="card-title grey-text text-darken-4 activator">Module 10<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div> 
+            </div>
         </div>
     </div>
 
@@ -216,6 +203,16 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
+    <script type="text/javascript">
+        function courseContainer(module){
+            $.ajax({
 
+                url: module+".php"
+
+            }).done(function (data){
+
+            })
+        }
+    </script>
   </body>
 </html>

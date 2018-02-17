@@ -34,6 +34,7 @@
 	
 		if($email == $demail && $password == $dpassword){
 			$_SESSION['Login'] = $email;
+			$_SESSION['UserName'] = $FirstName;
 			$_SESSION['UserCredentials'] = array("FullName"=> $FullName, "AccessLevel"=>$AccessLevel);	
 
 
