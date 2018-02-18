@@ -21,7 +21,6 @@
         <link rel="stylesheet" href="../reveal.js-master/lib/css/zenburn.css">
         <link rel="stylesheet" href="../reveal.js-master/css/SocialHousingCustom.css">
 
-
         <!--[if lt IE 9]>
 <script src="lib/js/html5shiv.js"></script>
 <![endif]-->

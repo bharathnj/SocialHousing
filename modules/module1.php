@@ -19,58 +19,12 @@
 
         <!-- Theme used for syntax highlighting of code -->
         <link rel="stylesheet" href="../reveal.js-master/lib/css/zenburn.css">
-
+        <link rel="stylesheet" href="../reveal.js-master/css/SocialHousingCustom.css">
 
         <!--[if lt IE 9]>
 <script src="lib/js/html5shiv.js"></script>
 <![endif]-->
-        <style>
 
-
-            .reveal{
-                font-size: 25px !important;
-                top: 10% !important;
-                height: 88%;
-            }
-
-            .slides{
-                top: 0% !important;
-                width: 95% !important;
-                height: auto !important;
-            }
-
-
-            .left {
-                left:-8.33%;
-                text-align: left;
-                float: left;
-                width:50%;
-                z-index:-10;
-            }
-
-            .right {
-                left:31.25%;
-                top: 75px;
-                float: right;
-                text-align: right;
-                z-index:-10;
-                width:50%;
-            }
-            
-/*            for overview css fixes*/
-/*
-            .reveal.overview .slides section:hover, .reveal.overview .slides section.present {
-                height: 500px;
-                top: 500px !important;
-            }
-            .reveal.overview .slides section:hover, .reveal.overview .slides section.future {
-                height: 500px;
-                top: 500px !important;
-                margin-left: 200px;
-            }
-*/
-
-        </style>
     </head>
 
     <body>
@@ -79,6 +33,11 @@
 
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
+                <section>
+                    <strong>Module 1</strong><br><br>
+                    <strong>CURRENT HOUSING CRISIS</strong>
+
+                </section>
                 <section>
 
                     <div class="left">
