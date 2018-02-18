@@ -23,6 +23,9 @@
     .side-nav .collapsible-body li a, .side-nav.fixed .collapsible-body li a {
         padding: 0 23.5px 0 95px;
     }
+
+    .modal { width: 30% !important ; height: 55% !important ; }  /* increase the height and width as you desire */
+   
     </style>
 </head>
 <body>  
@@ -34,31 +37,68 @@
     <div id="homeContainer">
         <div class="slider fullscreen">
                 <ul class="slides">
-                    <li>
-                        <img src="images/randomImage1.jpg"> <!-- random image -->
+                   <li style="background-color: #222;">
+                        <img src="images/real-estate-1-sh.jpg" style="background-color: #222;"> <!-- random image -->
                         <div class="caption center-align">
-                            <h3>This is our big Tagline!</h3>
-                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                        </div>
-                    </li>
+                            <h3>"THE BEST INVESTMENT ON earth IS earth".</h3>
+                            <h5 class="light grey-text text-lighten-3">we are here to help you out.</h5>
+                        </div> -->
+                     </li>
                     <li>
                         <img src="images/randomImage2.jpg"> <!-- random image -->
                         <div class="caption left-align">
-                            <h3>Left Aligned Caption</h3>
+                            <h3>CEO words</h3>
+                            <div>
+                                <img src="images/ceo.png" style="width: 100px;"/>
+                            </div>
                             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+
+                            <div class="right-align">
+                                <img id="CeoMessage1" src="images/youtube.gif" style="width: 300px; height: 200px;"/>
+                            </div>
                         </div>
                     </li>
                     <li>
                         <img src="images/randomImage3.jpg"> <!-- random image -->
-                        <div class="caption right-align">
-                            <h3>Right Aligned Caption</h3>
+                        <div class="caption left-align">
+                            <h3>Director words</h3>
+                            <div>
+                                <img src="images/ceo.png" style="width: 100px;"/>
+                            </div>
                             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+
+                            <div class="right-align">
+                                <img id="CeoMessage2" src="images/youtube.gif" style="width: 300px; height: 200px;"/>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
     </div>
 
+    <!-- CEO message1 -->
+
+     <!-- Modal Structure -->
+    <div id="message1" class="modal">
+        <div class="modal-content">
+            <h5 style="text-align: center;">CEO Message</h5>
+            <iframe width="370" height="215" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+
+    <div id="message2" class="modal">
+        <div class="modal-content">
+            <h5 style="text-align: center;">Director's Message</h5>
+            <iframe width="370" height="215" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
 	  <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
@@ -67,6 +107,15 @@
           $(document).ready(function(){
 //                $('.carousel.carousel-slider').carousel({full_width: true});
                  $('.slider').slider();
+
+                 $('#CeoMessage1').click(function(){
+                    $('#message1').modal('open');
+                 });
+
+                $('#CeoMessage2').click(function(){
+                    $('#message2').modal('open');
+                 });
+
             });
 
     </script>
