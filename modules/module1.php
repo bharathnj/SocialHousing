@@ -14,6 +14,10 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
         <link rel="stylesheet" href="../reveal.js-master/css/reveal.css">
         <link rel="stylesheet" href="../reveal.js-master/css/theme/black.css" id="theme">
 
@@ -34,24 +38,25 @@
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
                 <section>
-                    <strong>Module 1</strong><br><br>
-                    <strong>CURRENT HOUSING CRISIS</strong>
-
+                    <h4><strong>Module 1</strong></h4><br><br>
+                    <h2><strong>CURRENT HOUSING CRISIS</strong></h2>
                 </section>
                 <section>
-
-                    <div class="left">
-                        <p>
-                            Take a look at the housing market in India,  and what do you see? 
-                        </p>
-                        <p>
-                            India is facing a housing crisis. The national shortage stands at close to 20 million units.  Unsurprisingly, most of the shortfall is at the bottom of the economic ladder.
-                        </p>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col m3 left-align">
+                                <p>
+                                    Take a look at the housing market in India,  and what do you see? 
+                                </p>
+                                <p>
+                                    India is facing a housing crisis. The national shortage stands at close to 20 million units.  Unsurprisingly, most of the shortfall is at the bottom of the economic ladder.
+                                </p>
+                            </div>
+                            <div class="col m9 left-align">
+                                <img src="../images/Module1/pyramid.png" >
+                            </div>
+                        </div>
                     </div>
-                    <div class="right">
-                        <img src="../images/Module1/pyramid.png" height="480" width="650">
-                    </div>
-
                 </section>
 
                 <section>
@@ -71,9 +76,14 @@
                     </div>
 
                 </section>
+
             </div>
 
         </div>
+
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../js/materialize.js"></script>
+        <script src="../js/init.js"></script>
 
         <script src="../reveal.js-master/lib/js/head.min.js"></script>
         <script src="../reveal.js-master/js/reveal.js"></script>

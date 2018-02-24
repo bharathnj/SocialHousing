@@ -14,6 +14,12 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
         <link rel="stylesheet" href="../reveal.js-master/css/reveal.css">
         <link rel="stylesheet" href="../reveal.js-master/css/theme/black.css" id="theme">
 
@@ -34,6 +40,33 @@
 
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
+                <section>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col m4">
+                                <div class="center promo promo-example">
+                                    <i class="material-icons">flash_on</i>
+                                    <p class="promo-caption">Speeds up development</p>
+                                    <p class="light center">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
+                                </div>
+                            </div>
+                            <div class="col m4">
+                                <div class="center promo promo-example">
+                                    <i class="material-icons">group</i>
+                                    <p class="promo-caption">User Experience Focused</p>
+                                    <p class="light center">By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.</p>
+                                </div>
+                            </div>
+                            <div class="col m4">
+                                <div class="center promo promo-example">
+                                    <i class="material-icons">settings</i>
+                                    <p class="promo-caption">Easy to work with</p>
+                                    <p class="light center">We have provided detailed documentation as well as specific code examples to help new users get started.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section>
 
                     <div class="left">
@@ -390,6 +423,11 @@ Reveal.addEventListener( 'customevent', function() {
             </div>
 
         </div>
+
+
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../js/materialize.js"></script>
+        <script src="../js/init.js"></script>
 
         <script src="../reveal.js-master/lib/js/head.min.js"></script>
         <script src="../reveal.js-master/js/reveal.js"></script>

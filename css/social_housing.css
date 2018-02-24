@@ -1,16 +1,17 @@
- body {
-     display: flex;
-     min-height: 100vh;
-     flex-direction: column;
- }
- main {
-     flex: 1 0 auto;
- }
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+}
 .btn{
- background-color: #139763 !important;
+    background-color: #139763 !important;
 }
 
 .page-footer{
-	background-color: #139763 !important;
-	padding-top: 0px;
+    background-color: #139763 !important;
+    padding-top: 0px;
 }
+
